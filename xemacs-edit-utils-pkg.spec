@@ -5,7 +5,7 @@
 ### EndComment
 
 Summary: 	Miscellaneous editor extensions, you probably need this.
-Summary(pl):	Miscellaneous editor extensions, you probably need this.
+Summary(pl):	Ró¿ne rozszerzenia edytora, prawdopodobnie bêdziesz tego potrzebowa³.
 
 Name:    	xemacs-edit-utils-pkg
 %define 	srcname	edit-utils
