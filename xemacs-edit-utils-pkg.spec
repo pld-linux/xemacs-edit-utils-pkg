@@ -2,7 +2,7 @@ Summary:	Miscellaneous editor extensions
 Summary(pl):	Ró¿ne rozszerzenia dla edytora
 Name:		xemacs-edit-utils-pkg
 %define		srcname	edit-utils
-Version:	1.76
+Version:	1.82
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
