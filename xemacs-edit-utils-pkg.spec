@@ -5,11 +5,11 @@
 ### EndComment
 
 Summary: 	Miscellaneous editor extensions, you probably need this.
-Summary(pl):	Ró¿ne rozszerzenia edytora, prawdopodobnie bêdziesz tego potrzebowa³.
+Summary(pl):	Miscellaneous editor extensions, you probably need this.
 
 Name:    	xemacs-edit-utils-pkg
 %define 	srcname	edit-utils
-Version: 	1.41
+Version: 	1.45
 Release:	1
 
 ### Preamble
@@ -31,24 +31,6 @@ Requires: 	xemacs-base-pkg
 %description -l pl 
 
 
-%package el
-Summary: 	Miscellaneous editor extensions, you probably need this. This package contains .el files
-Summary(pl):	Miscellaneous editor extensions, you probably need this. Pliki ¿ród³owe .el
-
-### ElPreamble
-Group:    	Applications/Editors/Emacs
-Group(pl):	Aplikacje/Edytory/Emacs
-Requires: 	%{name} = %{version}
-### EndElPreamble
-
-
-%description el
-.el source files -- not necessary to run XEmacs
-
-%description el -l pl
-Pliki ¼ród³owe procedur w eLispie do XEmacsa.
-
-
 ### Main
 %prep
 %setup -q -c
@@ -57,6 +39,10 @@ Pliki ¼ród³owe procedur w eLispie do XEmacsa.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
+gzip -9nf lisp/edit-utils/ChangeLog 
+
+%clean
+rm -fr $RPM_BUILD_ROOT
 ### EndMain
 
 ### PrePost
@@ -64,5 +50,8 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 ### Files
 %files
-%{_datadir}/xemacs-packages/lisp/*
+%defattr(644,root,root,755)
+%dir %{_datadir}/xemacs-packages/lisp/*
+%{_datadir}/xemacs-packages/lisp/*/*.elc
+%doc lisp/edit-utils/ChangeLog.gz 
 ### EndFiles
