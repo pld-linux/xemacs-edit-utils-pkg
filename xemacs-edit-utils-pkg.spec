@@ -1,7 +1,7 @@
-Summary:	Miscellaneous editor extensions, you probably need this
-Summary(pl):	Miscellaneous editor extensions, you probably need this
+Summary:	Miscellaneous editor extensions
+Summary(pl):	Ró¿ne rozszerzenia dla edytora
 Name:		xemacs-edit-utils-pkg
-%define 	srcname	edit-utils
+%define		srcname	edit-utils
 Version:	1.76
 Release:	1
 License:	GPL
@@ -30,8 +30,12 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Miscellaneous xemaqcs editor extensions, you probably want to have
+installed in your system.
 
-%description -l pl 
+%description -l pl
+Ró¿ne rozszerzenia dla xemacsa, które najprawdopodobniej chcesz mieæ
+zainstalowane w swoim systemie.
 
 %prep
 %setup -q -c
@@ -42,13 +46,13 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/edit-utils/ChangeLog 
+gzip -9nf lisp/edit-utils/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/edit-utils/ChangeLog.gz 
+%doc lisp/edit-utils/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
