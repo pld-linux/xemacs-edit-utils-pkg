@@ -2,7 +2,7 @@ Summary:	Miscellaneous editor extensions, you probably need this
 Summary(pl):	Miscellaneous editor extensions, you probably need this
 Name:		xemacs-edit-utils-pkg
 %define 	srcname	edit-utils
-Version:	1.69
+Version:	1.70
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
