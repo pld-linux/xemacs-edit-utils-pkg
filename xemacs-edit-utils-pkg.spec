@@ -2,12 +2,12 @@ Summary:	Miscellaneous editor extensions
 Summary(pl):	Ró¿ne rozszerzenia dla edytora
 Name:		xemacs-edit-utils-pkg
 %define		srcname	edit-utils
-Version:	2.10
-Release:	2
+Version:	2.32
+Release:	1	
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	8d3c77a3ae8fb443a608a148e32e0d48
+# Source0-md5:	c858e39c25478b3797a5859c991d7bc9
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -43,3 +43,6 @@ rm -fr $RPM_BUILD_ROOT
 %doc lisp/edit-utils/ChangeLog
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_datadir}/xemacs-packages/info/edit-utils.info
+%{_datadir}/xemacs-packages/info/tempo.info
+%{_datadir}/xemacs-packages/pkginfo/MANIFEST.edit-utils
