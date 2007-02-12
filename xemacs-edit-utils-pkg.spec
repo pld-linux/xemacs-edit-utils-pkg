@@ -1,5 +1,5 @@
 Summary:	Miscellaneous editor extensions
-Summary(pl):	Ró¿ne rozszerzenia dla edytora
+Summary(pl.UTF-8):   RÃ³Å¼ne rozszerzenia dla edytora
 Name:		xemacs-edit-utils-pkg
 %define		srcname	edit-utils
 Version:	2.32
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Miscellaneous xemaqcs editor extensions, you probably want to have
 installed in your system.
 
-%description -l pl
-Ró¿ne rozszerzenia dla xemacsa, które najprawdopodobniej chcesz mieæ
+%description -l pl.UTF-8
+RÃ³Å¼ne rozszerzenia dla xemacsa, ktÃ³re najprawdopodobniej chcesz mieÄ‡
 zainstalowane w swoim systemie.
 
 %prep
