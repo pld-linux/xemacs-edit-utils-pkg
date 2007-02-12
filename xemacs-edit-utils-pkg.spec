@@ -1,5 +1,5 @@
 Summary:	Miscellaneous editor extensions
-Summary(pl.UTF-8):   Różne rozszerzenia dla edytora
+Summary(pl.UTF-8):	Różne rozszerzenia dla edytora
 Name:		xemacs-edit-utils-pkg
 %define		srcname	edit-utils
 Version:	2.32
