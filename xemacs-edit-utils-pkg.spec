@@ -6,7 +6,7 @@ Version:	2.32
 Release:	1	
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	c858e39c25478b3797a5859c991d7bc9
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
